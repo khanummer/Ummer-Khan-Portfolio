@@ -1,0 +1,15 @@
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 4rem;
+}
+
+.header-button {
+    padding: 1rem;
+}
