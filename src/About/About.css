@@ -1,9 +1,29 @@
 .about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 5% 5%;
+    grid-template-areas: "title text" 
+                         "picture skill"; 
 }
 
 .about-title {
+    grid-area: title;
     font-size: 5rem;
+    padding-top: 3rem;
+}
+
+.about-text {
+    grid-area: text;
+    padding-top: 3rem;
+}
+
+.about-skills {
+    grid-area: skill;
+}
+
+.about-pic {
+    grid-area: picture;
+    height: 200%;
+    /* width: 70%; */
+    justify-self: center;
 }
